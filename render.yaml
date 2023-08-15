@@ -6,4 +6,6 @@ services:
     env: docker
     dockerfilePath: ./Dockerfile
     autoDeploy: false
-    
+    envVars:
+      - key: PORT
+        value: 80

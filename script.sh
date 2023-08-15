@@ -2,4 +2,4 @@
 
 echo "start"
 
-sleep 365d
+python3 -m http.server $PORT
