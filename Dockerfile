@@ -1,3 +1,5 @@
 FROM postgres:latest
 
-ENTRYPOINT [ "sleep", "365d" ]
+
+COPY ./script.sh /script.sh
+ENTRYPOINT [ "/script.sh" ]
