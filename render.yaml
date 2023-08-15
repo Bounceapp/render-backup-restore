@@ -1,6 +1,9 @@
 services:
   - type: pserv
     name: psql
-    runtime: image
-    image: 
-      url: docker.io/library/postgres:latest
+    region: oregon
+    runtime: docker
+    env: docker
+    dockerfilePath: ./Dockerfile
+    autoDeploy: false
+    
