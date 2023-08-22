@@ -9,6 +9,10 @@ services:
     envVars:
       - key: PORT
         value: 80
+      - key: OLD_DATABASE_URL
+        sync: false
+      - key: NEW_DATABASE_URL
+        sync: false
 
 databases:
   - name: bounce-data-15
