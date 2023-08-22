@@ -1,3 +1,5 @@
+#! /bin/bash
+
 set -euo pipefail
 
 DUMP_FILE=/dump.sql

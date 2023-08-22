@@ -1,3 +1,4 @@
+#! /bin/bash
 set -euo pipefail
 
-screen -L -S "$1" -dm $1
+screen -L -S "$(basename $1)" -dm $1
