@@ -1,3 +1,3 @@
 set -euo pipefail
 
-screen -L -d -m $1
+screen -L -S "$1" -dm $1
