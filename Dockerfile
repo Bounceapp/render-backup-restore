@@ -2,7 +2,7 @@ FROM postgres:latest
 
 RUN apt update && apt install -y python3 screen
 
-COPY ./script.sh /script.sh
-COPY ./dump.sh /dump.hs
+COPY ./entrypoint.sh /entrypoint.sh
+COPY ./scripts /scripts
 
-ENTRYPOINT [ "bash", "/script.sh" ]
+ENTRYPOINT [ "bash", "/entrypoint.sh" ]
