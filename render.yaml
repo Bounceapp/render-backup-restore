@@ -13,9 +13,3 @@ services:
         sync: false
       - key: NEW_DATABASE_URL
         sync: false
-
-databases:
-  - name: bounce-data-15
-    plan: standard
-    postgresMajorVersion: 15
-    databaseName: bounce_data
